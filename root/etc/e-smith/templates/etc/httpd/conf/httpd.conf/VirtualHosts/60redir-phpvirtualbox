@@ -1,0 +1,13 @@
+{
+if ($port ne "443")
+{
+$OUT .= <<'HERE';
+## Redirect phpvirtualbox Address to Secure Address
+RewriteEngine on
+RewriteRule ^/phpvirtualbox https://%{HTTP_HOST}/phpvirtualbox
+
+## End Of Redirect
+HERE
+}
+}
+
