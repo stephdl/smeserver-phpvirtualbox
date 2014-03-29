@@ -12,10 +12,10 @@ URL: http://mirror.de-labrusse.fr
 Group: SMEserver/addon
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
-Patch0: smeserver-phpvirtualbox-force-https.patch
-Patch1: smeserver-phpvirtualbox-unix-group.patch
-Patch2: smeserver-phpvirtualbox-4.3.0-remove-webauth.patch
-Patch3: smeserver-phpvirtualbox-4.3.0-add_webauth_migrate_fragment.patch
+#Patch0: smeserver-phpvirtualbox-force-https.patch
+#Patch1: smeserver-phpvirtualbox-unix-group.patch
+#Patch2: smeserver-phpvirtualbox-4.3.0-remove-webauth.patch
+#Patch3: smeserver-phpvirtualbox-4.3.0-add_webauth_migrate_fragment.patch
 BuildArchitectures: noarch
 BuildRequires: e-smith-devtools
 Requires: e-smith-release >= 8.0
@@ -53,10 +53,10 @@ administer VirtualBox in a headless environment - mirroring the VirtualBox GUI t
 
 %prep
 %setup
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+#%patch0 -p1
+#%patch1 -p1
+#%patch2 -p1
+#%patch3 -p1
 %build
 #perl createlinks
 
