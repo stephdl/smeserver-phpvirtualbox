@@ -1,5 +1,5 @@
 {
-        $OUT .= "     AddExternalGroup ugroup /usr/lib/httpd/modules/unixgroup\n";
+        $OUT .= "     AddExternalGroup ugroup /usr/bin/unixgroup\n";
         $OUT .= "     SetExternalGroupMethod ugroup environment\n";
 }
 
