@@ -80,8 +80,6 @@ rm -rf %{name}-%{version}
 %preun
 
 %post
-/bin/chmod 750 /usr/lib/httpd/modules/unixgroup
-/bin/chown root:www /usr/lib/httpd/modules/unixgroup
 
 echo "=============================================================="
 echo "	Please do not forget to install the extension pack "
