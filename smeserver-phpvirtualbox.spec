@@ -1,6 +1,6 @@
 %define name smeserver-phpvirtualbox
 %define version 4.3.1
-%define release 2
+%define release 3
 %define rpmver   4.3.1
 Summary: smserver rpm to install phpvirtualbox
 Name: %{name}
@@ -30,6 +30,9 @@ modern web interface, it allows you to access and control remote VirtualBox inst
 administer VirtualBox in a headless environment - mirroring the VirtualBox GUI through its web interface.
 
 %changelog
+* Sun May 18 2014 stephane de labrusse <stephdl@de-labrusse.fr> 4.3.1-3
+- Added a ssl redirection if the phpvirtualbox url is changed
+
 * Wed Mar 19 2014 stephane de labrusse <stephdl@de-labrusse.fr> 4.3.1-1
 - due to the bug correction of phpvirtualbox, this version give back the web authentication with migrate fragment update
 * Wed Jan 08 2014 JP Pialasse <tests@pialasse.com> 4.3.0-10.sme
