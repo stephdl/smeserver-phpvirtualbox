@@ -1,7 +1,7 @@
 %define name smeserver-phpvirtualbox
-%define version 4.3.1
-%define release 3
-%define rpmver   4.3.1
+%define version 5.0.0
+%define release 1
+%define rpmver   5.0.0
 Summary: smserver rpm to install phpvirtualbox
 Name: %{name}
 Version: %{version}
@@ -20,8 +20,8 @@ BuildArchitectures: noarch
 BuildRequires: e-smith-devtools
 Requires: e-smith-release >= 9.0
 Requires: php-soap
-Requires: phpvirtualbox >= 4.3.0
-Requires: phpvirtualbox < 4.4
+Requires: phpvirtualbox >= 5.0
+Requires: phpvirtualbox < 5.1
 
 AutoReqProv: no
 %description
@@ -30,10 +30,14 @@ modern web interface, it allows you to access and control remote VirtualBox inst
 administer VirtualBox in a headless environment - mirroring the VirtualBox GUI through its web interface.
 
 %changelog
+* Thu Aug 06 2015 stephane de labrusse <stephdl@de-labrusse.fr> 5.0.0-1
+- require to phpvirtualbox-5.0
+
 * Sun May 18 2014 stephane de labrusse <stephdl@de-labrusse.fr> 4.3.1-3
 - first release to sme9
 - unixgroup removed from the contribs
 - fix ssl redirection
+
 * Wed Mar 19 2014 stephane de labrusse <stephdl@de-labrusse.fr> 4.3.1-1
 - due to the bug correction of phpvirtualbox, this version give back the web authentication with migrate fragment update
 * Wed Jan 08 2014 JP Pialasse <tests@pialasse.com> 4.3.0-10.sme
